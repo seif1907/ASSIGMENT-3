@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container" style="max-width: 800px;">
+        <h2>Data Table</h2>
+        
+        <div class="search-box">
+            <input type="text" id="searchBox" placeholder="Type to search by name, age, or city...">
+        </div>
+
+        <div class="sort-buttons">
+            <button id="sortNameBtn" class="sort-btn">Sort by Name</button>
+            <button id="sortAgeBtn" class="sort-btn">Sort by Age</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/data.js"></script>
+</body>
+</html>
